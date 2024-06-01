@@ -22,18 +22,24 @@ export default function App() {
     return (
         <div className='px-20 pt-12 w-[900px] mx-auto'>
             <div className='bg-teal-400 bg-opacity-20 flex *:flex-grow *:border-none'>
-                <button className='btn rounded-none bg-teal-400 bg-opacity-5  border-none' onClick={() => setCurrentPage(<PostsList1 />)}>
+                <button
+                    className='btn rounded-none bg-teal-400 bg-opacity-5  border-none'
+                    onClick={() => setCurrentPage(<PostsList1 />)}>
                     Posts List 1
                 </button>
-                <button className='btn rounded-none bg-teal-400 bg-opacity-5 ' onClick={() => setCurrentPage(<PostsList2 />)}>
+                <button
+                    className='btn rounded-none bg-teal-400 bg-opacity-5 '
+                    onClick={() => setCurrentPage(<PostsList2 />)}>
                     Posts List 2
                 </button>
-                <button className='btn rounded-none bg-teal-400 bg-opacity-5 '
+                <button
+                    className='btn rounded-none bg-teal-400 bg-opacity-5 '
                     onMouseEnter={onHoverPostOneLink}
                     onClick={() => setCurrentPage(<Post id={1} />)}>
                     First Post
                 </button>
-                <button className='btn rounded-none bg-teal-400 bg-opacity-5 '
+                <button
+                    className='btn rounded-none bg-teal-400 bg-opacity-5 '
                     onClick={() =>
                         setCurrentPage(
                             <CreatePost setCurrentPage={setCurrentPage} />
@@ -41,16 +47,20 @@ export default function App() {
                     }>
                     New Post
                 </button>
-                <button className='btn rounded-none bg-teal-400 bg-opacity-5 ' onClick={() => setCurrentPage(<PostListPaginated />)}>
+                <button
+                    className='btn rounded-none bg-teal-400 bg-opacity-5 '
+                    onClick={() => setCurrentPage(<PostListPaginated />)}>
                     Post List Paginated
                 </button>
-                <button className='btn rounded-none bg-teal-400 bg-opacity-5 ' onClick={() => setCurrentPage(<PostListInfinite />)}>
+                <button
+                    className='btn rounded-none bg-teal-400 bg-opacity-5 '
+                    onClick={() => setCurrentPage(<PostListInfinite />)}>
                     Post List Infinite
                 </button>
                 <br />
             </div>
 
-            <hr className=' opacity-20'/>
+            <hr className=' opacity-20' />
 
             {currentPage}
         </div>

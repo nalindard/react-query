@@ -19,8 +19,8 @@ export function PostListInfinite() {
   if (status === "error") return <h1>{JSON.stringify(error)}</h1>
 
   return (
-    <>
-      <h1>Post List Infinite</h1>
+    <div className="py-7">
+      <h1 className="text-2xl uppercase pb-7 text-teal-400">Post List Infinite</h1>
       {data.pages
         .flatMap(data => data.posts)
         .map(post => (
@@ -31,6 +31,6 @@ export function PostListInfinite() {
           {isFetchingNextPage ? "Loading..." : "Load More"}
         </button>
       )}
-    </>
+    </div>
   )
 }
