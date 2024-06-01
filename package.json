@@ -1,0 +1,13 @@
+{
+  "name": "react-query-crash-course-example-main",
+  "version": "1.0.0",
+  "description": "In order to run this project you need to start both the client and the API.",
+  "main": "index.js",
+  "scripts": {
+    "dev:api": "cd api && npm run start",
+    "dev:client": "cd client && npm run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
